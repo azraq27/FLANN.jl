@@ -1,0 +1,10 @@
+name = "FLANN"
+uuid = "7b695cee-f81a-11e8-2431-af3cb12ba3a0"
+authors = ["Bill Gross <bill.gross@me.com>"]
+version = "0.1.0"
+
+[deps]
+BinDeps = "9e28174c-4ba2-5203-b857-d8d62c4213ee"
+Distances = "b4f34e82-e78d-54a5-968a-f98e89d6e8f7"
+Homebrew = "d9be37ee-ecc9-5288-90f1-b9ca67657a75"
+Libdl = "8f399da3-3557-5675-b5ff-fb832c97cbdb"

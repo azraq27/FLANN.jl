@@ -1,4 +1,5 @@
 using BinDeps
+using Libdl
 
 @BinDeps.setup
 
@@ -15,6 +16,11 @@ provides(Binaries,
          libflann,
          unpacked_dir=".",
          os = :Windows)
+
+@static if Sys.isapple()
+    using Homebrew
+    Homebrew.add("cmake")
+end
 
 flannusrdir = BinDeps.usrdir(libflann)
 flannlib = joinpath(flannusrdir,"lib","libflann."*Libdl.dlext)
